@@ -7,6 +7,8 @@
   <meta name="description" content="Professional guidance for property investment in Koh Samui: villas, apartments, yields, ownership routes. Learn more and see current opportunities." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://samuiproperty.pro/" />
+  <link rel="preconnect" href="https://kohsamui.investments">
+  <link rel="dns-prefetch" href="https://kohsamui.investments">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Samui Property • Professional Investment Guidance" />
@@ -56,13 +58,38 @@
     <div class="logo">SamuiProperty<span style="opacity:.7">.pro</span></div>
 
     <div class="card" role="region" aria-label="Samui property investment introduction">
-      <h1>Professional Guidance for Koh Samui Property Investment</h1>
+      <h1>Get Matched to Koh Samui Properties That Fit Your Budget &amp; Timeline</h1>
       <p>Looking for a data-driven path into Samui real estate? We help investors find <strong>villas and apartments</strong> that fit their budget, yield targets, and timeline—backed by clear ownership routes for foreign buyers.</p>
       <p class="sub">Learn about prime areas (Bophut, Chaweng Noi, Lamai), typical rental performance, and steps to get matched privately with vetted developers.</p>
-      <a class="cta" href="https://kohsamui.investments/?utm_source=samuiproperty.pro&utm_medium=referral&utm_campaign=cta">
-  Learn more &nbsp;→
-</a>
 
+      <a class="cta" href="https://kohsamui.investments/?utm_source=samuiproperty.pro&utm_medium=referral&utm_campaign=cta">
+        See current opportunities &nbsp;→
+      </a>
+      <p class="sub" style="margin-top:10px">Private intake • No spam • Instant guide access</p>
+
+      <p style="margin-top:10px">
+        <a class="cta" style="background:transparent;border-color:rgba(255,255,255,.35)"
+           href="https://kohsamui.investments/guide.html?utm_source=samuiproperty.pro&utm_medium=referral&utm_campaign=soft">
+          Preview the 2025 guide &nbsp;→
+        </a>
+      </p>
+
+      <script>
+        // Track primary CTA clicks (first .cta on the page)
+        document.addEventListener('DOMContentLoaded', function(){
+          const cta = document.querySelector('.cta');
+          if(!cta) return;
+          cta.addEventListener('click', function(){
+            try {
+              gtag('event', 'cta_click', {
+                event_category: 'engagement',
+                event_label: 'samuiproperty.pro_primary',
+                value: 1
+              });
+            } catch(e){}
+          });
+        });
+      </script>
     </div>
 
     <div class="foot">
